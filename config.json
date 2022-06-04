@@ -9,6 +9,7 @@
     "anonymizeips": true,
     "ipv4bits": 16,
     "ipv6bits": 16,
+    "poolwarningmsg": "",
     
     "defaultCoin": "ravencoin",
     
