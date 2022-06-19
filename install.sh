@@ -21,30 +21,39 @@ sudo add-apt-repository -y ppa:chris-lea/redis-server
 sudo add-apt-repository -y ppa:bitcoin/bitcoin
 
 sudo apt update
-sudo apt install -y libdb4.8-dev libdb4.8++-dev libssl-dev libboost-all-dev libminiupnpc-dev libtool autotools-dev redis-server
-sudo apt install -y sudo git npm nodejs      
+sudo apt install -y libdb-dev libdb++-dev libssl-dev libboost-all-dev libminiupnpc-dev libtool autotools-dev redis-server
+sudo apt install -y sudo git npm nodejs
+
+sleep 3
 
 sudo systemctl enable fail2ban
 sudo systemctl start fail2ban
+sleep 2
 sudo systemctl enable redis-server
 sudo systemctl start redis-server
+sleep 2
 sudo systemctl enable ntp
 sudo systemctl start ntp
 
 sudo rm -rf ~/.nvm
 sudo rm -rf ~/.npm
-wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 source ~/.bashrc
 sudo chown -R $USER:$GROUP ~/.nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-nvm install v12.13.0
-nvm use v12.13.0
-npm update -g
+nvm install v18.4.0
+nvm use v18.4.0
 
-npm install -g webpack@4.46.0
-npm install -g pm2@4.5.6
+npm update -g
+npm install -g pm2@latest
+npm install -g npm@latest
+
+git config --global http.https://gopkg.in.followRedirects true
+git clone https://github.com/Seal-Clubber/kawpow-pool-ravencoin
+chmod -R +x kawpow-pool-ravencoin/
+cd kawpow-pool-ravencoin
 
 npm install
 npm update
