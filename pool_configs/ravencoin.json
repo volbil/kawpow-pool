@@ -2,12 +2,12 @@
     "enabled": true,
     "coin": "ravencoin.json",
 
-    "address": "RNs3ne88DoNEnXFTqUrj6zrYejeQpcj4jk",
+    "address": "RAVENCOIN_WALLET",
     
-    "donateaddress": "RNs3ne88DoNEnXFTqUrj6zrYejeQpcj4jk",
+    "donateaddress": "RAVENCOIN_WALLET",
 
     "rewardRecipients": {
-        "RNs3ne88DoNEnXFTqUrj6zrYejeQpcj4jk": 0.5
+        "RAVENCOIN_WALLET": 0.5
     },
 
     "paymentProcessing": {
@@ -27,7 +27,7 @@
     },
 
     "ports": {
-	"10008": {
+	"6666": {
             "diff": 0.05,
     	    "varDiff": {
     	        "minDiff": 0.025,
@@ -38,7 +38,7 @@
     		"maxJump": 25
     	    }
         },
-        "10016": {
+        "7777": {
 	    "diff": 0.10,
             "varDiff": {
                 "minDiff": 0.05,
@@ -49,7 +49,7 @@
 		"maxJump": 25
             }
         },
-        "10032": {
+        "8888": {
 	    "diff": 0.20,
             "varDiff": {
     		"minDiff": 0.10,
@@ -60,7 +60,7 @@
     		"maxJump": 50
     	    }
         },
-	"10256": {
+	"9999": {
 	    "diff": 1024000000,
             "varDiff": {
                 "minDiff": 1024000000,
