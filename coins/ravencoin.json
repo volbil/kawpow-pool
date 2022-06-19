@@ -5,11 +5,11 @@
     
     "wallet": "https://github.com/RavenProject/Ravencoin/releases",
 
-    "explorer":"https://explorer.ravenland.org/",
+    "explorer":"https://api.ravencoin.org/",
     
-    "explorerGetBlockJSON": "https://explorer.ravenland.org/api/getrawtransaction?decrypt=1&txid=",
-    "explorerGetBlock": "https://explorer.ravenland.org/block/",
-    "explorerGetTX": "https://explorer.ravenland.org/tx/",
+    "explorerGetBlockJSON": "-",
+    "explorerGetBlock": "https://api.ravencoin.org/block/",
+    "explorerGetTX": "https://api.ravencoin.org/tx/",
     
     "blockTime": 60,
     "blockChange": 1   
