@@ -65,7 +65,7 @@
         "sslenabled": false,
         "sslforced": false,
         "host": "0.0.0.0",
-        "port": 80,
+        "port": 3001,
         "sslport": 443,
         "sslkey": "/home/pool/nomp-kawpow-pool/certs/privkey.pem",
         "sslcert": "/home/pool/nomp-kawpow-pool/certs/fullchain.pem",
