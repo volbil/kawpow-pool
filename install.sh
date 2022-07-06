@@ -43,17 +43,17 @@ sudo chown -R $USER:$GROUP ~/.nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-nvm install v12.22.6
-nvm use v12.22.6
+nvm install v9.0.0
+nvm use v9.0.0
 
-npm update -g
-npm install -g pm2@latest
-npm install -g npm@latest
+# npm update -g
+# npm install -g pm2@latest
+# npm install -g npm@latest
 
 git config --global http.https://gopkg.in.followRedirects true
-git clone https://github.com/Seal-Clubber/kawpow-pool-ravencoin
-chmod -R +x kawpow-pool-ravencoin/
-cd kawpow-pool-ravencoin
+git clone https://github.com/volbil/kawpow-pool
+chmod -R +x kawpow-pool/
+cd kawpow-pool
 
 npm install
 npm update
