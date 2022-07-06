@@ -47,7 +47,7 @@ nvm install v9.0.0
 nvm use v9.0.0
 
 # npm update -g
-# npm install -g pm2@latest
+npm install -g pm2@latest
 # npm install -g npm@latest
 
 git config --global http.https://gopkg.in.followRedirects true

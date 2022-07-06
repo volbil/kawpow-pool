@@ -1,0 +1,16 @@
+{
+    "name": "akila",
+    "symbol": "AKILA",
+    "algorithm": "kawpow",
+
+    "wallet": "https://github.com",
+
+    "explorer":"https://testnet.akilaexplorer.com/",
+
+    "explorerGetBlockJSON": "-",
+    "explorerGetBlock": "https://api.ravencoin.org/block/",
+    "explorerGetTX": "https://api.ravencoin.org/tx/",
+
+    "blockTime": 25,
+    "blockChange": 1
+}
